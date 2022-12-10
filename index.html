@@ -19,8 +19,32 @@
         <h1>Jimmy's Diner</h1>
         <p class="lead">The best burgers and pizzas in town.</p>
       </header>
-      <div id="menu-items" class="menu-items"></div>
-      <script src="app.js" type="module"></script>
+      <main>
+        <div id="menu-items" class="menu-items"></div>
+      </main>
+      <footer>
+        <div class="current-order">
+          <h3 class="your-order">Your order</h3>
+          <div class="order-line">
+            <h3>Pizza</h3>
+            <button id="remove-button" class="remove-button">remove</button>
+            <p class="price">$14</p>
+          </div>
+          <div class="order-line">
+            <h3>Beer</h3>
+            <button id="remove-button" class="remove-button">remove</button>
+            <p class="price">$12</p>
+          </div>
+          <hr>
+          <div class="total-price">
+            <h3>Total price:</h3>
+            <p class="price">$14</p>
+          </div>
+            <button id="order-button" class="order-button">Complete order</button>
+          </div>
+        </div>
+      </footer>
     </div>
+    <script src="app.js" type="module"></script>
   </body>
 </html>

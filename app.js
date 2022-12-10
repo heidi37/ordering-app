@@ -15,7 +15,7 @@ function renderMenu() {
                 <p class="price">$${menuItem.price}</p>
             </div>
             <div class="col-plus-icon">
-                <p class="plus-icon">+</p>
+                <button class="plus-icon">+</button>
             </div>
         </div>
         <hr>

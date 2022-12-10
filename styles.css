@@ -108,6 +108,7 @@ hr {
 
 .current-order {
     padding: 0 46px 46px;
+    display: none;
 }
 
 .your-order {

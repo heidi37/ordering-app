@@ -53,6 +53,7 @@ hr {
     /* height: fit-content; */
     margin: 0 auto;
     background: whitesmoke;
+    position: relative;
 }
 
 /* menu */
@@ -149,4 +150,63 @@ hr {
     font-weight: bold;
     border: none;
     padding: 18px 0;
+    font-size: 20px;
+}
+.modal-inner {
+    display: none;
+    background: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 23px;
+    flex-direction: column;
+}
+
+.modal-inner h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 24px 0 46px;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+}
+
+input[type="text"]{
+    display: block;
+    margin-bottom: 23px;
+    height: 71px;
+    font-size: 20px;
+    padding: 0 26px;
+}
+
+#cvv {
+    margin-bottom: 46px;
+}
+
+.modal-inner .order-button {
+    margin-top: 0;
+}
+
+.modal-background {
+    position: absolute;
+    top: 167px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(185,185,185,0.896796218487395) 87%, rgba(255,255,255,0) 100%);
+    right: 0px;
+    padding: 140px 25px;
+    height: 50%;
+    width: 550px;
+    display: none;
+}
+
+.thank-you {
+    margin: 0 46px;
+    padding: 50px 60px;
+    background: #ECFDF5;
+    color: #065F46;
+    text-align: center;
+    /* display: none; */
+}
+.thank-you h3 {
+    font-size: 32px;
 }

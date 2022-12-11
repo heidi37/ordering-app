@@ -1,11 +1,14 @@
 import { menu } from '/data.js'
 const menuItems =document.getElementById('menu-items')
 const orderDetails =document.getElementById('order-details')
-const totalPrice = document.getElementById('total-price');
+const totalPrice = document.getElementById('total-price')
+const modalBackground = document.getElementById('modal-background')
+const innerModal = document.getElementById('modal-inner')
+const thankYou = document.getElementById('thank-you')
 const ordersArray = []
 
+let menuText =''
 function renderMenu() {
-    let menuText =''
     menu.forEach((menuItem, index) => {
         menuText += `
         <div class="item" id="item-${menuItem.id}">
@@ -39,7 +42,14 @@ document.addEventListener('click', function(e){
         removeFromOrder(e.target.dataset.remove)
     }
     if (e.target.id === 'order-button') {
-        alert('complete order clicked')
+        modalBackground.style.display = 'block'
+        innerModal.style.display = 'flex'
+    }
+    if (e.target.id === 'pay-button') {
+        console.log(thankYou)
+        modalBackground.style.display = 'none'
+        // thankYou.style.display = 'block'
+        
     }
 })
 

@@ -36,6 +36,30 @@
             </div>
           </div>
           <button id="order-button" class="order-button">Complete order</button>
+          <div class="modal-background" id="modal-background">
+            <div class="modal-inner" id="modal-inner">
+              <h2>Enter card details</h2>
+              <form>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="name"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Enter card number"
+                  id="card"
+                  required
+                />
+                <input type="text" placeholder="Enter CVV" id="cvv" required />
+                <button id="pay-button" class="order-button">Pay</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="thank-you" id="thank-you">
+          <h3>Thanks, James! Your order is on it's way!</h3>
         </div>
       </footer>
     </div>

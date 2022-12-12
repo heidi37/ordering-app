@@ -5,6 +5,7 @@ const totalPrice = document.getElementById('total-price')
 const modalBackground = document.getElementById('modal-background')
 const innerModal = document.getElementById('modal-inner')
 const thankYou = document.getElementById('thank-you')
+const payForm = document.getElementById('pay-form')
 const ordersArray = []
 
 let menuText =''
@@ -46,10 +47,15 @@ document.addEventListener('click', function(e){
         innerModal.style.display = 'flex'
     }
     if (e.target.id === 'pay-button') {
-        console.log(thankYou)
+        e.preventDefault()
+        const payFormData = new FormData(payForm)
+        const name = payFormData.get('name')
         modalBackground.style.display = 'none'
-        // thankYou.style.display = 'block'
-        
+        currentOrder.style.display = 'none'
+        thankYou.style.display = 'block'
+        thankYou.innerHTML = `
+        <h3>Thanks, ${name}! Your order is on it's way!</h3>
+        `
     }
 })
 

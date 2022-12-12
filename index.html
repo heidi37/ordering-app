@@ -39,27 +39,37 @@
           <div class="modal-background" id="modal-background">
             <div class="modal-inner" id="modal-inner">
               <h2>Enter card details</h2>
-              <form>
+              <form id="pay-form">
                 <input
                   type="text"
                   placeholder="Enter your name"
                   id="name"
+                  name="name"
                   required
                 />
                 <input
                   type="text"
                   placeholder="Enter card number"
                   id="card"
+                  name="card"
                   required
                 />
-                <input type="text" placeholder="Enter CVV" id="cvv" required />
-                <button id="pay-button" class="order-button">Pay</button>
+                <input
+                  type="text"
+                  placeholder="Enter CVV"
+                  id="cvv"
+                  name="cvv"
+                  required
+                />
+                <button id="pay-button" class="order-button" type="submit">
+                  Pay
+                </button>
               </form>
             </div>
           </div>
         </div>
         <div class="thank-you" id="thank-you">
-          <h3>Thanks, James! Your order is on it's way!</h3>
+          <!-- THANK YOU MESSAGE HERE-->
         </div>
       </footer>
     </div>
